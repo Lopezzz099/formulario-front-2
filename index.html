@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Crear cuenta</h1>
+        <br>
+        <section>
+            <ul>
+                <li class="errors1">El nombre puede ser una o mas palabras pero hasta 25 caracteres.</li>
+                <li class="errors2">La contraseña debe tener entre 8 y 20 caracteres.</li>
+                <li class="errors3">Debe poner: @gmail.com</li>
+                <li class="errors4">Debes de aceptar los terminos y condiciones.</li>
+            </ul>
+        </section>
+        <br>
+        <label>
+            <input type="text" class="error" name="nombre" id="nombre" autocomplete="off" placeholder="Nombre">
+        </label>
+        <label>
+            <input type="email" name="mail" id="correo" placeholder="email">
+        </label>
+        <label>
+            <input type="text" name="pass" id="pass" placeholder="Contraseña">
+        </label>
+        <label>
+            <input type="checkbox" name="condiciones" id="terminosYcondiciones" value="terminos">
+            Aceptar terminos y condiciones
+        </label>
+        <button>Registrarse</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
